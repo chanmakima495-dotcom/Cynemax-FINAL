@@ -1,0 +1,1 @@
+const o="/proxy";async function a(n,t={}){const e=`${o}${n}`,r=await fetch(e,{headers:{"Content-Type":"application/json",...t.headers},...t});if(!r.ok)throw new Error(`API error ${r.status}: ${e}`);return r.json()}export{a};
